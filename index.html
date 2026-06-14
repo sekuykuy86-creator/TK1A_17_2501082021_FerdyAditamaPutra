@@ -1,75 +1,293 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Sistem Informasi Akademik TI</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<div class = "header"> 
-			<h1>Teknologi Informasi</h1>
-		</div>
-		<div class="left">
-			<nav>
-				<h3>Program Studi</h3>
-				<ul>
-					<li><a href="#">D3 Teknik Komputer</a></li>
-					<li><a href="#">D3 Manajemen Informatika</a></li>
-					<li><a href="#">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
-				</ul>
-			</nav>  
+<!doctype html>
+<html lang="en">
+  <head>
 
-			<main>
-				<h1>Selamat Datang</h1>
-				<div class="dark-banner">
-					<img src="TI.png" alt="Logo Teknologi Informasi">               
-				</div>
-				<div class="deskripsi">
-					<p>
-						Jurusan Teknologi Informasi menghasilkan tenaga profesional di bidang teknologi informasi, khususnya dalam pengelolaan sistem berbasis komputer yang mampu beradaptasi di berbagai sektor industri modern.
-					</p>
-					<p>
-						Fasilitas yang tersedia meliputi ruang kelas ber-AC, laboratorium komputer dengan spesifikasi tinggi, serta lingkungan belajar yang nyaman dan kondusif.
-					</p>
-				</div>
-				<div class="akreditasi">
-					<h3>Akreditasi Program Studi</h3>
-					<table>
-						<thead>
-							<tr>
-								<th>No</th>
-								<th>Program Studi</th>
-								<th>Jenjang</th>
-								<th>Akreditasi</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Teknik Komputer</td>
-								<td>D3</td>
-								<td>Baik Sekali</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Manajemen Informatika</td>
-								<td>D3</td>
-								<td>Unggul</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Teknologi Rekayasa Perangkat Lunak</td>
-								<td>D4</td>
-								<td>Baik Sekali</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				
-			</main>	
-		</div>
-		<div class = "footer"> 
-				Copyright &copy; 2026.
-				Teknologi Informasi PNP
-		</div>
-	</body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Teknologi Informasi</title>
+  </head>
+  <body>
+    <div class="Container">
+        <div class="p-3 mb-2 bg-dark text-white">
+            <img src="img/tipnp.png" alt="Logo TI-PNP" width="100px">
+            <h1 style="text-align: center">Teknologi Informasi</h1>
+            <h1 style="text-align: center">Politeknik Negeri Padang</h1>
+            <ul class="nav nav-pills mb-3 justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" aria-current="page" href="#home">Beranda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#profil" id="dropdownProfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profil
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownProfil">
+                        <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                        <li><a class="dropdown-item" href="visimisi.html">Visi & Misi</a></li>
+                    </ul>
+                </li>
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#prodi" id="dropdownProdi" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Program Studi
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownProdi">
+                        <li><a class="dropdown-item" href="https://ti.pnp.ac.id/teknik-komputer/">Teknik Komputer</a></li>
+                        <li><a class="dropdown-item" href="https://ti.pnp.ac.id/manajemen-informatika/">Manajemen Informatika</a></li>
+                        <li><a class="dropdown-item" href="https://ti.pnp.ac.id/teknologi-rekayasa-perangkat-lunak/">Teknologi Rekayasa Perangkat Lunak</a></li>
+                        <li><a class="dropdown-item" href="https://ti.pnp.ac.id/animasi/">Animasi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#akademik">Akademik</a>
+                </li>
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#informasi" id="dropdownInformasi" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Informasi
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownProdi">
+                        <li><a class="dropdown-item" href="https://ti.pnp.ac.id/index.php/category/berita/">Berita</a></li>
+                        <li><a class="dropdown-item" href="https://ti.pnp.ac.id/index.php/category/pengumuman/">Pengumuman</a></li>
+                        <li><a class="dropdown-item" href="https://ti.pnp.ac.id/index.php/events/">Events</a></li>
+                        <li><a class="dropdown-item" href="https://ti.pnp.ac.id/index.php/academy/">Academy</a></li>
+						<li><a class="dropdown-item" href="https://ti.pnp.ac.id/index.php/jurnal/">Jurnal</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#kontak">Hubungi Kami</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="home">
+                <div class card-body>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="img/tekinfo.png" class="d-block w-100" alt="Gambar1">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="img/tekom.png" class="d-block w-100" alt="Gambar2">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="img/mi.png" class="d-block w-100" alt="Gambar3">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="img/animasi.png" class="d-block w-100" alt="Gambar4">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <h3 style="text-align: center">Selamat Datang di Teknologi Informasi Politeknik Negeri Padang</h3>
+                    <div class="row">
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Kalender Akademik</h5>
+                              <p class="card-text">Semua kegiatan proses pembelajaran Politeknik Negeri Padang dalam satu tahun akademik</p>
+                              <a href="#" class="btn btn-primary">Kalender Akademik</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Akreditasi Prodi</h5>
+                              <p class="card-text">Penilaian kelayakan Program Studi Jurusan Teknologi Informasi Politkenik Negeri Padang</p>
+                              <a href="#" class="btn btn-primary">Akreditasi Prodi</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">Jadwal Kuliah</h5>
+                                <p class="card-text">Jadwal Perkuliahan Semester Ganjil Tahun Ajaran 2024/2025 Jurusan Teknologi Informasi</p>
+                                <a href="#" class="btn btn-primary">Jadwal Kuliah</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">Download Area</h5>
+                                <p class="card-text">Kumpulan Panduan / Standart Operating Prosedure Jurusan Teknologi Informasi</p>
+                                <a href="#" class="btn btn-primary">Download Area</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">SITA</h5>
+                                <p class="card-text">SisFo Tugas Akhir</p>
+                                <a href="#" class="btn btn-primary">SITA</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">SIAKAD</h5>
+                                <p class="card-text">SisFo Akademik</p>
+                                <a href="#" class="btn btn-primary">SIAKAD</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">MBKM</h5>
+                                <p class="card-text">SisFo MBKM</p>
+                                <a href="#" class="btn btn-primary">MBKM</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">SATIK</h5>
+                                <p class="card-text">SisFo Saran dan Kritik</p>
+                                <a href="#" class="btn btn-primary">SATIK</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">UKT</h5>
+                                <p class="card-text">SisFo Uang Kuliah Tunggal</p>
+                                <a href="#" class="btn btn-primary">UKT</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="akreditasi">
+                <div class="card-body">
+                    <table class="table table-bordered border-primary">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Program Studi</th>
+                                <th scope="col">Jenjang</th>
+                                <th scope="col">Akreditasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Teknik Komputer</td>
+                            <td>D3</td>
+                            <td>Unggul</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>Manajemen Informasi</td>
+                            <td>D3</td>
+                            <td>Baik Sekali</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>Teknologi Rekayasa Perangkat Lunak</td>
+                            <td>D4</td>
+                            <td>Unggul</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">4</th>
+                            <td>Animasi</td>
+                            <td>D4</td>
+                            <td>Baik Sekali</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="kontak">
+                <div class="card-body">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Contact Us</h5>
+                              <p class="card-text">Gedung E</p>
+                              <p class="card-text">Kampus Politeknik Negeri Padang, Limau Manis Padang</p>
+                              <p class="card-text">Kode Pos : 25176</p>
+                              <p class="card-text">Phone : 0751-72590</p>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <img src="img/Screenshot 2026-04-27 104627.png" class="img-fluid rounded-start" alt="AlamatPNP">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="p-3 mb-2 bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/tipnp.png" width="150px">
+                        <p>Kampus Politeknik Negeri Padang, Limau Manis Padang</p>
+                        <p>Kode Pos: 25176</p>
+                        <p>Phone: 0751-72590</p>
+                    </div>
+                    <div class="col">
+                        <h4>ACADEMY</h4>
+                        <ul>
+                            <li>
+                                 <a href="https://ti.pnp.ac.id/mikrotikacademy/">Mikrotik Academy</a>
+                            </li>
+                            <li>
+                                <a href="#">RedHat Academy</a>
+                            </li>
+                            <li>                
+                                <a href="#">Oracle Academy</a>
+                            </li>
+                            <li>
+                                <a href="#">AWS Educate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>USEFUL LINK</h4>
+                        <ul>
+                            <li>
+                                 <a href="https://ti.pnp.ac.id/index.php/academy/">Academy</a>
+                            </li>
+                            <li>
+                                <a href="https://ti.pnp.ac.id/index.php/akreditasi/">Akreditasi</a>
+                            </li>
+                            <li>                
+                                <a href="https://ti.pnp.ac.id/index.php/fasilitas/">Fasilitas</a>
+                            </li>
+                            <li>
+                                <a href="https://ti.pnp.ac.id/index.php/saran-dan-masukan/">Saran dan Masukan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Follow Us</h4>
+                        <a href="https://www.youtube.com/@jurusantipnp6598" target="_blank"><img src="img/youtube.png" width="40px"></a>
+                        <a href="https://www.instagram.com/teknologiinformasipnp?igsh=MWQxeGM2aThzMjNkaw==" target="_blank"><img src="img/instagram.png" width="40px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
